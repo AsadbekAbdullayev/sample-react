@@ -1,20 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 let initialState = {
-	sentEmail: {
-		email: '',
-		forgotPassword: false,
-	},
-	getMe: {},
-	userData: {},
-	hrData: {},
-	live_coding_data: {
-		code: '',
-		lang: {},
-		selectedLang: '',
-	},
-	chatElements: [],
-	refetchStart: () => {},
+	data: {},
 };
 
 const generelSlice = createSlice({
@@ -24,20 +11,9 @@ const generelSlice = createSlice({
 		changeState: (state, action) => {
 			state[action.payload.name] = action.payload.value;
 		},
-		clearState: (state) => {
-			state = {
-				...state,
-				chatElements: [],
-				live_coding_data: {
-					code: '',
-					lang: {},
-					selectedLang: '',
-				},
-			};
-		},
 	},
 });
 
-export const { changeState, clearState } = generelSlice.actions;
+export const { changeState } = generelSlice.actions;
 
 export default generelSlice.reducer;

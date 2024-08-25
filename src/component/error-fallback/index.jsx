@@ -1,4 +1,5 @@
 import React from 'react';
+// 
 export const ErrorFallback = ({ error, resetErrorBoundary }) => (
 	<div role="alert" className="w-full min-h-screen bg-slate-400">
 		<p>Something went wrong:</p>

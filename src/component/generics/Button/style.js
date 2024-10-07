@@ -13,7 +13,6 @@ const getHeight = ({ size }) => {
 			return '44px';
 	}
 };
-
 export const Button = styled(AntButton)`
 	position: ${({ position }) => position && position};
 	top: ${({ top }) => top && top};

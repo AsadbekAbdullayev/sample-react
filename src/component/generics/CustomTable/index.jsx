@@ -2,7 +2,6 @@ import React from 'react';
 import { Wrapper } from './style';
 import Cell from './Cell';
 import { Loader } from '../../Loader/Loader';
-
 const Table = ({ column, rowData, clickRow, loading }) => {
 	const clickRowFunction = () => {
 		clickRow && clickRow();

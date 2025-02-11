@@ -1,21 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-
-
-
-
-
-
-
-
-
-
-
-
-
 let initialState = {
 	data: {},
 };
-
 const generelSlice = createSlice({
 	name: 'generel',
 	initialState,
@@ -27,5 +13,4 @@ const generelSlice = createSlice({
 });
 
 export const { changeState } = generelSlice.actions;
-
 export default generelSlice.reducer;

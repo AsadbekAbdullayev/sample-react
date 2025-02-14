@@ -10,6 +10,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 
 
+
 export const Loader = ({ size }) => {
 	const { pathname } = useLocation();
 	return (
